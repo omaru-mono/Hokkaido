@@ -40,6 +40,7 @@ a:active, a:focus{outline:0;}
 padding:0 1%;
 width:100%;
 position:relative;
+margin-left: 30px;
 }
 
 .inner{
@@ -60,6 +61,10 @@ font-weight:normal;
 #header{
 overflow:hidden;
 padding:5px 0 0;
+}
+
+#header span{
+font-size:14px;
 }
 
 * html #header{height:1%;}
@@ -86,7 +91,6 @@ text-decoration: none;
 }
 
 .logo span{
-font-size:14px;
 font-weight:normal;
 }
 
@@ -117,7 +121,7 @@ float:left;
 
 ul#topnav a{
 width:144px;
-font-size:12px;
+font-size:18px;
 display:block;
 padding:5px 0 10px 10px;
 color:#fff;
@@ -332,11 +336,6 @@ background:#000;
 	
 	#wrapper{padding-bottom:20px;}
 	
-	#main{
-	float:right;
-	width:480px;
-	}
-	
 	#subpage #sub{
 	float:left;
 	width:235px;
@@ -362,33 +361,7 @@ background:#000;
 	#header h1,#header .logo{padding-left:10px;}
 	#header .info{padding-right:10px;}
 	
-	ul#topnav{
-	clear:both;
-	width:100%;
-	border-top:1px solid #2c74c6;
-	}
 
-	ul#topnav li{
-	width:33%;
-	border-right:1px solid #2c74c6;
-	border-bottom:1px solid #2c74c6;
-	box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-	}
-
-	ul#topnav li:nth-child(3n){border-right:0;width:34%;}
-
-	ul#topnav a{
-	width:100%;
-	border:0;
-  box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-	}
-	
-	ul#topnav li.active a,ul#topnav a:hover{background:#000;}
-	
 	#mainBanner{width:100%;}
 
 	.grid{
@@ -440,29 +413,6 @@ background:#000;
 }
 
 
-/* スマートフォン 横(ランドスケープ) */
-@media only screen and (max-width:640px){
-	.grid{width:100%;}
-	
-	.grid img{
-	float:none;
-	margin:20px auto 10px;
-	}
-	
-	.grid p{text-align:left;}
-	
-	img.frame,#gallery img{border-width:2px;}
-
-  .alignleft,.alignright{
-	float:none;
-	display:block;
-	margin:0 auto 10px;
-	}
-	
-	#footer .grid p{text-align:center;}
-}
-
-
 /* スマートフォン 縦(ポートレート) */
 @media only screen and (max-width:480px){
 	#header .logo{padding-top:10px;}
@@ -470,7 +420,6 @@ background:#000;
 	ul#topnav li{width:50%;}
 
 	ul#topnav li:nth-child(3n){
-	border-right:1px solid #2c74c6;
 	width:50%;
 	}	
 	ul#topnav li:nth-child(2n),ul#topnav li:nth-child(6n){border-right:0;}
@@ -481,8 +430,7 @@ background:#000;
 
 /* time-schedule */
 .time-schedule {
-min-width: 480px;
-max-width: 640px;
+width: 480px;
 list-style: none;
 margin: 0 0 0 4em;
 padding-left: 10px;
@@ -491,10 +439,10 @@ box-sizing: border-box;
 }
 
 .time-schedule li {
-width: 430px;
+width: 98%;
 margin: 0 0;
 padding: 8px 0;
-position: relative;
+/* position: relative; */
 }
 
 .time-schedule span.time {
