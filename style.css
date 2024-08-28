@@ -40,7 +40,7 @@ a:active, a:focus{outline:0;}
 padding:0 1%;
 width:100%;
 position:relative;
-margin-left: 30px;
+margin-left: 3px;
 }
 
 .inner{
@@ -120,7 +120,7 @@ float:left;
 }
 
 ul#topnav a{
-width:144px;
+width:120px;
 font-size:18px;
 display:block;
 padding:5px 0 10px 10px;
@@ -327,37 +327,6 @@ background:#000;
 #footer .copyright{font-size:11px;}
 
 
-/* PC用 */
-@media only screen and (min-width:960px){
-	#wrapper,.inner,ul#topnav{
-	width:940px;
-	padding:0;
-	}
-	
-	#wrapper{padding-bottom:20px;}
-	
-	#subpage #sub{
-	float:left;
-	width:235px;
-	overflow:hidden;
-	}
-	
-	/* グリッド */
-	.grid{width:234px;}
-	.col2{width:469px;padding-bottom:12px;}
-	.col3{width:704px;}
-	#gallery .grid{width:230px;}
-	#subpage #sub .grid{
-	width:100%;
-	float:none;
-	padding-bottom:30px;
-	}
-	
-}
-
-
-/* モニター幅960px以下 */
-@media only screen and (max-width:960px){
 	#header h1,#header .logo{padding-left:10px;}
 	#header .info{padding-right:10px;}
 	
@@ -410,27 +379,11 @@ background:#000;
 	margin-bottom:5px;
 	text-align:center;
 	}
-}
-
-
-/* スマートフォン 縦(ポートレート) */
-@media only screen and (max-width:480px){
-	#header .logo{padding-top:10px;}
-	.info{padding:10px 0;}
-	ul#topnav li{width:50%;}
-
-	ul#topnav li:nth-child(3n){
-	width:50%;
-	}	
-	ul#topnav li:nth-child(2n),ul#topnav li:nth-child(6n){border-right:0;}
-
-	#mainBanner h2,#mainBanner h3{font-size:80%;}
-}
 
 
 /* time-schedule */
 .time-schedule {
-width: 480px;
+width: 400px;
 list-style: none;
 margin: 0 0 0 4em;
 padding-left: 10px;
